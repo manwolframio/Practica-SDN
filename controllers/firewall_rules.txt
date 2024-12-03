@@ -1,0 +1,23 @@
+enabled	mac_src	mac_dst	policy	switch
+
+# Politicas del host 1
+enable	00:00:00:00:00:01	00:00:00:00:00:07	allow	*
+enable	00:00:00:00:00:01	00:00:00:00:00:08	allow	*
+enable	00:00:00:00:00:01	ff:ff:ff:ff:ff:ff	allow	*
+enable	00:00:00:00:00:01	*	disallow	*
+
+# Politicas del host 2
+enable	00:00:00:00:00:02	00:00:00:00:00:03	allow	*
+enable	00:00:00:00:00:02	ff:ff:ff:ff:ff:ff	allow	*
+enable	00:00:00:00:00:02	*	disallow	*
+
+# Politicas del host 4
+enable	00:00:00:00:00:04	00:00:00:00:00:07	allow	*
+enable	00:00:00:00:00:04	00:00:00:00:00:05	allow	*
+enable	00:00:00:00:00:04	ff:ff:ff:ff:ff:ff	allow	*
+enable	00:00:00:00:00:04	*	disallow	*
+
+# Politicas del host 6
+enable	00:00:00:00:00:06	00:00:00:00:00:05	disallow	*
+enable	00:00:00:00:00:06	*	allow	*
+enable	*	*	allow	*
